@@ -5,8 +5,13 @@
 
 
 @theme{
+  --breakpoint-xxl:1200px;
   --font-Poppins:"Poppins",sans-serif;
-  --breakpoint-mobile:900px,
+  --breakpoint-md:50rem;
+  --color-baseRed: #7D0A0A;
+  
 }
+
+
 
 
