@@ -5,7 +5,7 @@ import Home from "./pages/Home.jsx";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact.jsx";
 import NotFound from "./pages/NotFound.jsx";
-import Posts from "./pages/Posts.jsx";
+import Posts from "./components/Post/Posts.jsx";
 import { Routes, Route } from "react-router-dom";
 import Register from "./pages/Register.jsx";
 import TestimoSection from "./components/Testimonials.jsx";
@@ -22,7 +22,6 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery/photo_gallery" element={<PhotoGallery />} />
-        <Route path="/posts/:id" element={<Posts />} />
         <Route path="/about_us" element={<AboutUs />} />
         <Route path="/register" element={<Register />} />
         <Route path="/posts/:id" element={<Posts />} />

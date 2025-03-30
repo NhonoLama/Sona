@@ -29,7 +29,7 @@ const TestimoSection = () => {
       <span className="text-4xl font-bold flex justify-center mb-10 max-xxl:text-3xl">
         What People Say
       </span>
-      <div className="relative w-full h-[750px]  overflow-hidden xxl:h-[650px] max-xxl:flex-col max-xxl:items-center">
+      <div className="relative w-full h-[750px] overflow-hidden xxl:h-[650px] max-xxl:flex-col max-xxl:items-center">
         <div>
           <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 w-[600px] h-[300px] max-xxl:w-[400px] max-xxl:h-[200px]">
             <svg
@@ -54,18 +54,11 @@ const TestimoSection = () => {
                 : index === 1
                 ? "xxl:absolute my-2 xxl:top-20 xxl:right-30 xxl:rotate-[-4deg]"
                 : "xxl:absolute my-2 xxl:top-80 xxl:left-150 xxl:rotate-[3deg]"
-            } z-10 transform transition-transform duration-300 hover:scale-105 
-             max-xxl:mt-5 max-xxl:static`}
+            } z-10 transform transition-transform duration-300 hover:scale-105 max-xxl:mt-5 max-xxl:static`}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.1 }}
-            transition={{
-              type: "spring",
-              stiffness: 50,
-              delay: index * 0.3,
-              duration: 100,
-              ease: "easeInOut",
-            }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ delay: index * 0.3 }}
           >
             <Card {...testimonial} />
           </motion.div>
@@ -77,14 +70,8 @@ const TestimoSection = () => {
             className="border-2 border-baseBlue text-baseRed px-6 py-2 rounded-full hover:bg-baseRed hover:scale-110 cursor-pointer hover:text-white transition"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.1 }}
-            transition={{
-              type: "spring",
-              stiffness: 50,
-              delay: 0.6,
-              duration: 5,
-              ease: "easeInOut",
-            }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ delay: 0.5 }}
           >
             View All ➜
           </motion.button>

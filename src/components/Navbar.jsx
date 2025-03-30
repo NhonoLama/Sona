@@ -95,10 +95,15 @@ const Navbar = () => {
             />
           </a>
 
-          <FaInstagram
-            size="18px"
-            className="cursor-pointer hover:scale-105 duration-200 transition hover:text-[#EAD196]"
-          />
+          <a
+            href="https://www.instagram.com/societyofnepalesearchitects/"
+            target="_blank"
+          >
+            <FaInstagram
+              size="18px"
+              className="cursor-pointer hover:scale-105 duration-200 transition hover:text-[#EAD196]"
+            />
+          </a>
           <FaTwitter
             size="18px"
             className="cursor-pointer hover:scale-105 duration-200 transition hover:text-[#EAD196]"

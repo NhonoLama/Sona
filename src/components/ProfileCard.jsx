@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter } from "react-icons/fa";
 const ProfileCard = ({ name, post, img }) => {
   return (
     <motion.div
-      className="relative w-80 h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden flex flex-col justify-end p-6 cursor-pointer"
+      className="relative w-90 h-100 bg-cover bg-center rounded-lg shadow-lg overflow-hidden flex flex-col justify-end p-6 cursor-pointer"
       style={{ backgroundImage: `url(${img})` }}
       initial={{ scale: 1 }}
       whileHover={{ scale: 1.05 }}
@@ -14,7 +14,7 @@ const ProfileCard = ({ name, post, img }) => {
       <div className="absolute inset-0 bg-black opacity-50 transition-opacity"></div>
 
       <motion.div
-        className="absolute left-0 bottom-0 bg-amber-50 p-3 px-7 w-full"
+        className="absolute left-0 bottom-0 bg-white p-3 px-7 w-full"
         initial={{ height: "60px" }}
         whileHover={{ height: "120px" }}
         transition={{ type: "spring", stiffness: 150, damping: 10 }}
