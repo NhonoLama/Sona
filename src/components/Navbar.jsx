@@ -4,8 +4,8 @@ import MenuIcon from "./MenuIcon";
 import { IoIosArrowDown } from "react-icons/io";
 
 import { FaFacebookF, FaYoutube, FaInstagram, FaTwitter } from "react-icons/fa";
-import img from "/whitelogo.png";
-import mobileImg from "/logo.png";
+import img from "/logo/whitelogo.png";
+import mobileImg from "/logo/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

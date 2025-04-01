@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import Sidebar from "./RPNavBar";
+import Sidebar from "./RPSideBar";
 
 const Posts = () => {
   const { id } = useParams();
@@ -11,7 +11,7 @@ const Posts = () => {
   // Scroll to top when this component mounts
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [id]); // Runs every time the post ID changes
+  }, [id]);
 
   if (!post) {
     return (
@@ -28,16 +28,16 @@ const Posts = () => {
   }
 
   return (
-    <div className="m-15 flex justify-between items-start">
+    <div className="m-15 flex justify-between gap-8 items-start">
       {/* Main Post Content */}
       <motion.div
-        key={id} // Ensures re-animation when navigating via sidebar
-        className="max-w-250"
+        key={id}
+        className="max-w-200"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
-        <h1 className="text-3xl font-bold py-4">{post.title}</h1>
+        <h1 className="text-3xl font-bold py-2">{post.title}</h1>
         <span className="text-gray-500">{post.date}</span>
         <motion.img
           src={post.img}
@@ -56,8 +56,6 @@ const Posts = () => {
           {post.content}
         </motion.p>
       </motion.div>
-
-      {/* Sidebar (Static, No Animation on Post Change) */}
       <div>
         <Sidebar />
       </div>

@@ -26,7 +26,7 @@ const RecentPostsSlider = () => {
       >
         <Swiper
           modules={[Pagination, Navigation]}
-          spaceBetween={5}
+          spaceBetween={0}
           slidesPerView={1}
           navigation
           pagination={{ clickable: true, type: "fraction" }}
@@ -41,9 +41,9 @@ const RecentPostsSlider = () => {
             <SwiperSlide key={post.id} className="">
               <Link to={`/posts/${post.id}`} state={{ post }}>
                 <motion.div
-                  className="relative m-10 p-4 rounded-lg shadow-lg hover:scale-105 hover:translate-y-[-10px] transition-transform duration-300 ease-in-out"
+                  className="relative m-6 p-2 rounded-lg shadow-lg hover:scale-105 hover:translate-y-[-10px] transition-transform duration-300 ease-in-out"
                   whileHover={{ scale: 1 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileTap={{ scale: 0.7 }}
                 >
                   <img
                     src={post.img}

@@ -77,7 +77,8 @@ const OurTeam = () => {
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
+            transition={{ duration: 1.2, delay: index * 0.3 }}
+            delay={1.2}
           >
             <ProfileCard
               name={profile.name}
@@ -97,9 +98,9 @@ const OurTeam = () => {
         {visibleCount < profiles.length && (
           <button
             onClick={() => setVisibleCount(profiles.length)}
-            className="border-2 border-baseBlue text-baseRed px-6 py-2 rounded-full hover:bg-baseRed hover:scale-110 cursor-pointer hover:text-white transition"
+            className=" border-2 border-baseBlue text-baseRed px-6 py-2 rounded-full hover:bg-baseRed hover:scale-105 cursor-pointer hover:text-white transition"
           >
-            Show More
+            Show More ➜
           </button>
         )}
       </motion.div>

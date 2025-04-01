@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="flex justify-around bg-[#7D0A0A]  py-10 px-15 md:text-[1rem] text-sm text-white max-lg:block  ">
         <div>
           <div className="flex gap-4 items-center mb-4">
-            <img src="/whitelogo.png" alt="logo" width="60px" />
+            <img src="/logo/whitelogo.png" alt="logo" width="60px" />
             <span className="font-bold text-xl md:text-2xl">
               Society of Nepalese Architects
             </span>
@@ -55,17 +55,17 @@ const Footer = () => {
           © 2021 SONA | Developed By : Nhono Studios Pvt. Ltd.
         </div>
         <div className="flex gap-5">
-          <div className="p-2 rounded-full relative cursor-pointer border-1 border-gray-400 duration-300 hover:brightness-200  hover:scale-105">
-            <FaInstagram size="25px" />
+          <div className="p-2 rounded-full cursor-pointer border-1 border-gray-400 duration-300 hover:brightness-200  hover:scale-105">
+            <FaInstagram size="20px" />
           </div>
           <div className="p-2 rounded-full border-1 border-gray-400 cursor-pointer duration-300 hover:brightness-200  hover:scale-105">
-            <BsFacebook size="25px" />
+            <BsFacebook size="20px" />
           </div>
           <div className="p-2 rounded-full border-1 border-gray-400 cursor-pointer duration-300 hover:brightness-200  hover:scale-105">
-            <FaXTwitter size="25px" />
+            <FaXTwitter size="20px" />
           </div>
           <div className="p-2 rounded-full border-1 border-gray-400 cursor-pointer duration-300 hover:brightness-200  hover:scale-105">
-            <ImYoutube2 size="25px" />
+            <ImYoutube2 size="20px" />
           </div>
         </div>
       </div>

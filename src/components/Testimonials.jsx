@@ -26,7 +26,7 @@ const testimonialsData = [
 const TestimoSection = () => {
   return (
     <div className="my-25 mx-4">
-      <span className="text-4xl font-bold flex justify-center mb-10 max-xxl:text-3xl">
+      <span className="text-4xl font-bold text-baseRed flex justify-center mb-10 max-xxl:text-3xl">
         What People Say
       </span>
       <div className="relative w-full h-[750px] overflow-hidden xxl:h-[650px] max-xxl:flex-col max-xxl:items-center">
